@@ -8,7 +8,7 @@ with open('bot_info.json', 'r') as f:
 client = commands.Bot(
     irc_token=credentials['irc_token'],
     client_id=credentials['client_id'],
-    nick='chronomaniacs',
+    nick=credentials['channels'][0],
     prefix='!',
     initial_channels=credentials['channels']
 )
